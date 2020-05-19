@@ -15,9 +15,9 @@ let questions1 = [
     {
         question : "Was lehnt Stallman und jeder gute Hacker ab?",
         imgSrc : "img/level1.jpg",
-        choiceA : "Einschränkungen und geschlossene Türen.",
-        choiceB : "Unsicheren Code.",
-        choiceC : "Überlassung von Quellcode an Firmen.",
+        choiceA : "Einschränk- ungen und geschlossene Türen",
+        choiceB : "Unsicheren Code",
+        choiceC : "Überlassung von Quellcode an Firmen",
         correct : "A"
     },{
         question : "Frage 2 / Level 1",

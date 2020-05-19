@@ -184,6 +184,20 @@ body{
     font-weight: bold;
     text-align: center;
 }
+#infotext{
+    font-size: 1.0em;
+    font-weight: bolder;
+    word-break: break-all;
+    width:700px;
+    height:300px;
+    border : 2px solid lightgrey;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    left:480px;
+    top:50px;
+    color : grey;
+}
 
 
 

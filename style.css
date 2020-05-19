@@ -191,10 +191,11 @@ body{
     width:700px;
     height:300px;
     border : 2px solid lightgrey;
+    margin : 20px auto;
     text-align: center;
     cursor: pointer;
     position: relative;
-    left:480px;
+    left:0px;
     top:50px;
     color : grey;
 }

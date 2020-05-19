@@ -14,28 +14,28 @@ const restartb = document.getElementById("restartb");
 let questions1 = [
     {
         question : "Frage 1 / Level 1",
-        imgSrc : "img/js.png",
+        imgSrc : "img/level1.png",
         choiceA : "Richtig",
         choiceB : "Falsch",
         choiceC : "Falsch",
         correct : "A"
     },{
         question : "Frage 2 / Level 1",
-        imgSrc : "img/js.png",
+        imgSrc : "img/level1.png",
         choiceA : "Falsch",
         choiceB : "Richtig",
         choiceC : "Falsch",
         correct : "B"
     },{
         question : "Frage 3 / Level 1",
-        imgSrc : "img/js.png",
+        imgSrc : "img/level1.png",
         choiceA : "Falsch",
         choiceB : "Falsch",
         choiceC : "Richtig",
         correct : "C"
     },{
         question : "Frage 4 / Level 1",
-        imgSrc : "img/js.png",
+        imgSrc : "img/level1.png",
         choiceA : "Richtig",
         choiceB : "Falsch",
         choiceC : "Falsch",

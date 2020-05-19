@@ -13,97 +13,97 @@ const restartb = document.getElementById("restartb");
 
 let questions1 = [
     {
-        question : "Was lehnt Stallman und jeder gute Hacker ab?",
+        question : "Welcher Computerhersteller war zu Beginn des Computerzeitalters Vorreiter?",
         imgSrc : "img/level1.jpg",
-        choiceA : "Einschränk- ungen und geschlossene Türen",
-        choiceB : "Unsicheren Code",
-        choiceC : "Überlassung von Quellcode an Firmen",
-        correct : "A"
-    },{
-        question : "Frage 2 / Level 1",
-        imgSrc : "img/level1.jpg",
-        choiceA : "Falsch",
-        choiceB : "Richtig",
-        choiceC : "Falsch",
-        correct : "B"
-    },{
-        question : "Frage 3 / Level 1",
-        imgSrc : "img/level1.jpg",
-        choiceA : "Falsch",
-        choiceB : "Falsch",
-        choiceC : "Richtig",
+        choiceA : "Microsoft",
+        choiceB : "IBM",
+        choiceC : "Apple",
         correct : "C"
     },{
-        question : "Frage 4 / Level 1",
+        question : "Bill Gates und Paul Allen sind bekannt für?",
         imgSrc : "img/level1.jpg",
-        choiceA : "Richtig",
-        choiceB : "Falsch",
-        choiceC : "Falsch",
+        choiceA : "Apple",
+        choiceB : "Microsoft",
+        choiceC : "Spotify",
+        correct : "B"
+    },{
+        question : "IBMs erster Vorteil gegenüber anderen Firmen?",
+        imgSrc : "img/level1.jpg",
+        choiceA : "Verwendung der Hardware anderer Hersteller",
+        choiceB : "Extrem schnelles Betriebssystem",
+        choiceC : "Erste Sicherheitssoftware",
         correct : "A"
+    },{
+        question : "Welche Firma, neben Apple und Microsoft, trug in den 70er im Silicon Valley Jahren einen großen Teil zur Weiterentwicklung von Computersoftware bei?",
+        imgSrc : "img/level1.jpg",
+        choiceA : "HP",
+        choiceB : "Xerox PARC",
+        choiceC : "Sony",
+        correct : "B"
     }
 ];
 
 let questions2 = [
     {
-        question : "Frage 1 / Level 2",
+        question : "Welcher Computer von Xerox fasste zum ersten Mal alle gesammelten Features, wie Icons, GUI und LAN.",
         imgSrc : "img/html.png",
-        choiceA : "Richtig",
-        choiceB : "Falsch",
-        choiceC : "Falsch",
-        correct : "A"
-    },{
-        question : "Frage 2 / Level 2",
-        imgSrc : "img/html.png",
-        choiceA : "Falsch",
-        choiceB : "Richtig",
-        choiceC : "Falsch",
-        correct : "B"
-    },{
-        question : "Frage 3 / Level 2",
-        imgSrc : "img/html.png",
-        choiceA : "Falsch",
-        choiceB : "Falsch",
-        choiceC : "Richtig",
+        choiceA : "Commodore 64",
+        choiceB : "Apple2",
+        choiceC : "Alto",
         correct : "C"
     },{
-        question : "Frage 4 / Level 2",
+        question : "Welche Firma kaufte die Features von Xerox und machte User Interfaces populär?",
         imgSrc : "img/html.png",
-        choiceA : "Richtig",
-        choiceB : "Falsch",
-        choiceC : "Falsch",
+        choiceA : "Microsoft",
+        choiceB : "Apple",
+        choiceC : "IBM",
+        correct : "B"
+    },{
+        question : "Wie lautet der Name des von Apple 1984 inklusive GUI (Graphic User Interface) – gekauft von Xerox – auf den Markt gebrachten PCs?",
+        imgSrc : "img/html.png",
+        choiceA : "Macintosh",
+        choiceB : "Atari",
+        choiceC : "Amiga",
+        correct : "A"
+    },{
+        question : "Was hat Richard Stallman 1983 eingeleitet?",
+        imgSrc : "img/html.png",
+        choiceA : "Software- kooperation und unentgeltliche Teilung",
+        choiceB : "Polarisierung von Microsoft und Apple",
+        choiceC : "Anstieg der Hackerkultur",
         correct : "A"
     }
 ];
 
 let questions3 = [
     {
-        question : "Frage 1 / Level 3",
+        question : "Was lehnt Stallman und jeder gute Hacker ab?",
         imgSrc : "img/css.png",
-        choiceA : "Richtig",
-        choiceB : "Falsch",
-        choiceC : "Falsch",
+        choiceA : "Einschränk- ungen und geschlossene Türen",
+        choiceB : "Unsicheren Code",
+        choiceC : "Überlassung von Quellcode an Firmen",
         correct : "A"
     },{
-        question : "Frage 2 / Level 3",
+        question : "Welches entscheidende Element fehlte Stallman, um das Betriebssystem fertigzustellen?",
         imgSrc : "img/css.png",
-        choiceA : "Falsch",
-        choiceB : "Richtig",
-        choiceC : "Falsch",
+        choiceA : "Compiler",
+        choiceB : "Systemkern",
+        choiceC : "Text-Editor",
         correct : "B"
     },{
-        question : "Frage 3 / Level 3",
+        question : "Was was das Betriebssystem, das 1971 bei den Bell Labs entwickelt worden ist und seit jeher als Standard für Universitäten und Hacker verwendet wird. ",
         imgSrc : "img/css.png",
-        choiceA : "Falsch",
-        choiceB : "Falsch",
-        choiceC : "Richtig",
-        correct : "C"
-    },{
-        question : "Frage 4 / Level 3",
-        imgSrc : "img/css.png",
-        choiceA : "Richtig",
-        choiceB : "Falsch",
-        choiceC : "Falsch",
+        choiceA : "UNIX",
+        choiceB : "FreeBSD",
+        choiceC : "GNU",
         correct : "A"
+    },{
+        question : "Der Name Linux, war nicht der Name mit dem der Entwickler (Linus Torvald) seine neue Software taufen wollte. Wie lautete sein Vorschlag?",
+        imgSrc : "img/css.png",
+        choiceA : "Monx",
+        choiceB : "Junx",
+        choiceC : "Freax",
+        correct : "C"
     }
 ];
 

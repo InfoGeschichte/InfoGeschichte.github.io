@@ -1,4 +1,3 @@
-// select all elements
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
@@ -12,7 +11,6 @@ const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 const restartb = document.getElementById("restartb");
 
-// create our questions
 let questions1 = [
     {
         question : "Frage 1 / Level 1",
@@ -111,8 +109,6 @@ let questions3 = [
 
 let levelQuestions = [questions1, questions2, questions3];
 
-// create some variables
-
 let lastQuestion = 5;
 let runningQuestion = 0;
 let count = 0;
@@ -124,7 +120,6 @@ let score = 0;
 let lives = 3;
 let level = 0;
 
-// render a question
 function renderQuestion(){
     let q = levelQuestions[level][runningQuestion];
     
@@ -137,7 +132,6 @@ function renderQuestion(){
 
 start.addEventListener("click",startQuiz);
 
-// start quiz
 function startQuiz(){
     if(level == levelQuestions.length) level = 0;
     lastQuestion = levelQuestions[level].length -1;
@@ -162,7 +156,6 @@ function startQuiz(){
     TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
 }
 
-// render progress
 function renderLives(){
     for(let qIndex = 0; qIndex < lives; qIndex++){
         progress.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
@@ -170,7 +163,6 @@ function renderLives(){
     }
 }
 
-// counter render
 
 function renderCounter(){
     if(count <= questionTime){
@@ -179,20 +171,19 @@ function renderCounter(){
         count++
     }else{
         count = 0;
-        // change progress color to red
+
         answerIsWrong();
         if(runningQuestion < lastQuestion){
             runningQuestion++;
             renderQuestion();
         }else{
-            // end the quiz and show the score
+ 
             clearInterval(TIMER);
             scoreRender();
         }
     }
 }
 
-// checkAnwer
 
 function checkAnswer(answer){
     if( answer == levelQuestions[level][runningQuestion].correct){
@@ -200,7 +191,6 @@ function checkAnswer(answer){
         score++;
     }else{
         // answer is wrong
-        // change progress color to red
         answerIsWrong();
     }
     count = 0;
@@ -208,31 +198,25 @@ function checkAnswer(answer){
         runningQuestion++;
         renderQuestion();
     }else{
-        // end the quiz and show the score
         clearInterval(TIMER);
         scoreRender();
     }
 }
 
-// answer is Wrong
 function answerIsWrong(){
     lives--;
     document.getElementById(lives).style.backgroundColor = "#f00";
     if(lives == 0){
-        // end the quiz and show the score
         clearInterval(TIMER);
         scoreRender();
     }
 }
 
-// score render
 function scoreRender(){
     scoreDiv.style.display = "block";
     
-    // calculate the amount of question percent answered by the user
     const scorePerCent = Math.round(100 * score/levelQuestions[level].length);
     
-    // choose the image based on the scorePerCent
     let img = (scorePerCent >= 80) ? "img/5.png" :
               (scorePerCent >= 60) ? "img/4.png" :
               (scorePerCent >= 40) ? "img/3.png" :

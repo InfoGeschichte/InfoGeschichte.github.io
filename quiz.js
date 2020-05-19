@@ -36,10 +36,10 @@ let questions1 = [
     },{
         question : "Frage 4 / Level 1",
         imgSrc : "img/js.png",
-        choiceA : "Falsch",
+        choiceA : "Richtig",
         choiceB : "Falsch",
-        choiceC : "Richtig",
-        correct : "C"
+        choiceC : "Falsch",
+        correct : "A"
     }
 ];
 
@@ -68,10 +68,10 @@ let questions2 = [
     },{
         question : "Frage 4 / Level 2",
         imgSrc : "img/html.png",
-        choiceA : "Falsch",
+        choiceA : "Richtig",
         choiceB : "Falsch",
-        choiceC : "Richtig",
-        correct : "C"
+        choiceC : "Falsch",
+        correct : "A"
     }
 ];
 
@@ -100,10 +100,10 @@ let questions3 = [
     },{
         question : "Frage 4 / Level 3",
         imgSrc : "img/css.png",
-        choiceA : "Falsch",
+        choiceA : "Richtig",
         choiceB : "Falsch",
-        choiceC : "Richtig",
-        correct : "C"
+        choiceC : "Falsch",
+        correct : "A"
     }
 ];
 

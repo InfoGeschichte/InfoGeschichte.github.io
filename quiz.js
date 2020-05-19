@@ -13,11 +13,11 @@ const restartb = document.getElementById("restartb");
 
 let questions1 = [
     {
-        question : "Frage 1 / Level 1",
+        question : "Was lehnt Stallman und jeder gute Hacker ab?",
         imgSrc : "img/level1.jpg",
-        choiceA : "Richtig",
-        choiceB : "Falsch",
-        choiceC : "Falsch",
+        choiceA : "Einschränkungen und geschlossene Türen.",
+        choiceB : "Unsicheren Code.",
+        choiceC : "Überlassung von Quellcode an Firmen.",
         correct : "A"
     },{
         question : "Frage 2 / Level 1",

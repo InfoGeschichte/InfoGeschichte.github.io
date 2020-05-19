@@ -30,11 +30,11 @@ let questions1 = [
         question : "IBMs erster Vorteil gegenüber anderen Firmen?",
         imgSrc : "img/level1.jpg",
         choiceA : "Verwendung der Hardware anderer Hersteller",
-        choiceB : "Extrem schnelles Betriebssystem",
-        choiceC : "Erste Sicherheitssoftware",
+        choiceB : "Extrem schnelles Betriebs- system",
+        choiceC : "Erste Sicherheits- software",
         correct : "A"
     },{
-        question : "Welche Firma, neben Apple und Microsoft, trug in den 70er im Silicon Valley Jahren einen großen Teil zur Weiterentwicklung von Computersoftware bei?",
+        question : "Welche Firma, neben Apple und Microsoft, trug einen großen Teil zur Weiterentwicklung von Computersoftware bei?",
         imgSrc : "img/level1.jpg",
         choiceA : "HP",
         choiceB : "Xerox PARC",
@@ -59,7 +59,7 @@ let questions2 = [
         choiceC : "IBM",
         correct : "B"
     },{
-        question : "Wie lautet der Name des von Apple 1984 inklusive GUI (Graphic User Interface) – gekauft von Xerox – auf den Markt gebrachten PCs?",
+        question : "Wie lautet der Name des von Apple 1984 inklusive GUI – gekauft von Xerox – auf den Markt gebrachten PCs?",
         imgSrc : "img/html.png",
         choiceA : "Macintosh",
         choiceB : "Atari",
@@ -68,7 +68,7 @@ let questions2 = [
     },{
         question : "Was hat Richard Stallman 1983 eingeleitet?",
         imgSrc : "img/html.png",
-        choiceA : "Software- kooperation und unentgeltliche Teilung",
+        choiceA : "Software- kooperation",
         choiceB : "Polarisierung von Microsoft und Apple",
         choiceC : "Anstieg der Hackerkultur",
         correct : "A"
@@ -91,14 +91,14 @@ let questions3 = [
         choiceC : "Text-Editor",
         correct : "B"
     },{
-        question : "Was was das Betriebssystem, das 1971 bei den Bell Labs entwickelt worden ist und seit jeher als Standard für Universitäten und Hacker verwendet wird. ",
+        question : "Welches 1971 bei den Bell Labs entwickelte Betriebssystem, wird als Standard für Universitäten und Hacker verwednet ",
         imgSrc : "img/css.png",
         choiceA : "UNIX",
         choiceB : "FreeBSD",
         choiceC : "GNU",
         correct : "A"
     },{
-        question : "Der Name Linux, war nicht der Name mit dem der Entwickler (Linus Torvald) seine neue Software taufen wollte. Wie lautete sein Vorschlag?",
+        question : "Wie wollte der Entwickler von Linux sein Betriebssystem ursprünglich nennen?",
         imgSrc : "img/css.png",
         choiceA : "Monx",
         choiceB : "Junx",

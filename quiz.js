@@ -46,30 +46,30 @@ let questions1 = [
 let questions2 = [
     {
         question : "Welcher Computer von Xerox fasste zum ersten Mal alle gesammelten Features, wie Icons, GUI und LAN.",
-        imgSrc : "img/html.png",
+        imgSrc : "img/level2.jpg",
         choiceA : "Commodore 64",
         choiceB : "Apple2",
         choiceC : "Alto",
         correct : "C"
     },{
         question : "Welche Firma kaufte die Features von Xerox und machte User Interfaces populär?",
-        imgSrc : "img/html.png",
+        imgSrc : "img/level2.jpg",
         choiceA : "Microsoft",
         choiceB : "Apple",
         choiceC : "IBM",
         correct : "B"
     },{
         question : "Wie lautet der Name des von Apple 1984 inklusive GUI – gekauft von Xerox – auf den Markt gebrachten PCs?",
-        imgSrc : "img/html.png",
+        imgSrc : "img/level2.jpg",
         choiceA : "Macintosh",
         choiceB : "Atari",
         choiceC : "Amiga",
         correct : "A"
     },{
         question : "Was hat Richard Stallman 1983 eingeleitet?",
-        imgSrc : "img/html.png",
+        imgSrc : "img/level2.jpg",
         choiceA : "Software- kooperation",
-        choiceB : "Polarisierung von Microsoft und Apple",
+        choiceB : "Polarisier- ung von Microsoft und Apple",
         choiceC : "Anstieg der Hackerkultur",
         correct : "A"
     }
@@ -78,28 +78,28 @@ let questions2 = [
 let questions3 = [
     {
         question : "Was lehnt Stallman und jeder gute Hacker ab?",
-        imgSrc : "img/css.png",
+        imgSrc : "img/level3.jpg",
         choiceA : "Einschränk- ungen und geschlossene Türen",
         choiceB : "Unsicheren Code",
         choiceC : "Überlassung von Quellcode an Firmen",
         correct : "A"
     },{
         question : "Welches entscheidende Element fehlte Stallman, um das Betriebssystem fertigzustellen?",
-        imgSrc : "img/css.png",
+        imgSrc : "img/level3.jpg",
         choiceA : "Compiler",
         choiceB : "Systemkern",
         choiceC : "Text-Editor",
         correct : "B"
     },{
-        question : "Welches 1971 bei den Bell Labs entwickelte Betriebssystem, wird als Standard für Universitäten und Hacker verwednet ",
-        imgSrc : "img/css.png",
+        question : "Welches 1971 entwickelte Betriebssystem, wird als Standard für Universitäten und Hacker verwednet?",
+        imgSrc : "img/level3.jpg",
         choiceA : "UNIX",
         choiceB : "FreeBSD",
         choiceC : "GNU",
         correct : "A"
     },{
         question : "Wie wollte der Entwickler von Linux sein Betriebssystem ursprünglich nennen?",
-        imgSrc : "img/css.png",
+        imgSrc : "img/level3.jpg",
         choiceA : "Monx",
         choiceB : "Junx",
         choiceC : "Freax",
@@ -112,12 +112,12 @@ let levelQuestions = [questions1, questions2, questions3];
 let lastQuestion = 5;
 let runningQuestion = 0;
 let count = 0;
-const questionTime = 10; // 10s
+let questionTime = 12; // 10s
 const gaugeWidth = 150; // 150px
-const gaugeUnit = gaugeWidth / questionTime;
+let gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
-let lives = 3;
+let lives = 2;
 let level = 0;
 
 function renderQuestion(){
@@ -134,8 +134,21 @@ start.addEventListener("click",startQuiz);
 
 function startQuiz(){
     if(level == levelQuestions.length) level = 0;
+    if(level == 0){
+        questionTime = 12;
+        gaugeUnit = gaugeWidth / questionTime 
+    } 
+    if(level == 1){
+        questionTime = 10;
+        gaugeUnit = gaugeWidth / questionTime 
+    } 
+    if(level == 2){
+        questionTime = 8;
+        gaugeUnit = gaugeWidth / questionTime 
+    } 
+
     lastQuestion = levelQuestions[level].length -1;
-    lives = 3;
+    lives = 2;
     runningQuestion = 0;
     count = 0;
     score = 0;
